@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"uri": "vscode-remote://codespaces+maurone7-code50-98240878-wq95jv9v6w4294/workspaces/98240878"
+		}
+	],
+	"remoteAuthority": "codespaces+maurone7-code50-98240878-wq95jv9v6w4294",
+	"settings": {
+		"gitdoc.enabled": true
+	}
+}

@@ -4,6 +4,7 @@ MAJOR_VERSION := $(shell echo $(VERSION) | cut -d'.' -f1)
 # installation directory (/usr/local by default)
 DESTDIR ?= /usr/local
 MANDIR ?= share/man/man3
+LDLIBS = -lcs50
 
 SRC := src/cs50.c
 INCLUDE := src/cs50.h
