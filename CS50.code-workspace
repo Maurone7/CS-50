@@ -1,0 +1,18 @@
+{
+    "folders": [
+        {
+            "path": "."
+        },
+        {
+            "path": "../Upper-Sco-2022"
+        },
+        {
+            "path": "../C"
+        }
+    ],
+    "settings": {
+        "files.associations": {
+            "cs50.h": "c"
+        }
+    }
+}
