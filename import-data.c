@@ -10,6 +10,7 @@ int main()
 {
     
     char source_list_barenfeld_2016[106][20];
+    char flux_list_barenfeld_2016[106][5];
     char source[100];
     char *filename = "/Users/mauro/Dropbox/GitHub/C/Barenfeld Table 1.txt";
     FILE * file = fopen(filename, "r");
@@ -26,18 +27,27 @@ int main()
     while (line < 106)
     {
         fgets(source, 256, file);
+        printf("%s", source);
         element = strtok(source, " ");
         element = strtok(NULL, " ");
         strcpy(source_list_barenfeld_2016[index], element);
+        element = strtok(NULL, " ");
+        element = strtok(NULL, " ");
+        element = strtok(NULL, " ");
+        element = strtok(NULL, " ");
+        element = strtok(NULL, " ");
+        strcpy(flux_list_barenfeld_2016[index], element);
+
         index++;
-        /* printf("%d \n", line); */
         line++;
     }
+
     fclose(file);
 
     for (int loop_value = 0; loop_value < sizeof(source_list_barenfeld_2016)/sizeof(source_list_barenfeld_2016[0]); loop_value++)
     {
         printf("%s \n", source_list_barenfeld_2016[loop_value]);
+        printf("%s \n", flux_list_barenfeld_2016[loop_value]);
     }
     return 0;
 }
